@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasya Auliya Rizka | International Relations & Content</title>
+  <meta
+    id="meta-description"
+    name="description"
+    content="Tasya Auliya Rizka's portfolio website: international relations, political affairs, content writing, research, and communications."
+  >
+  <script>
+    (() => {
+      const supported = ["en", "tr", "de", "fr", "es", "it", "pt", "nl", "pl", "ru"];
+      const get = (key) => {
+        try {
+          return localStorage.getItem(key);
+        } catch {
+          return null;
+        }
+      };
+
+      const language = get("tasya-language");
+      const theme = get("tasya-theme");
+
+      if (supported.includes(language)) {
+        document.documentElement.lang = language;
+      }
+
+      if (theme === "dark" || theme === "light") {
+        document.documentElement.dataset.theme = theme;
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#top" data-i18n="brand">Tasya Auliya Rizka</a>
+        <div class="nav-links">
+          <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+          <a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a>
+          <a class="nav-link" href="#leadership" data-i18n="nav.leadership">Leadership</a>
+          <a class="nav-link" href="#education" data-i18n="nav.education">Education</a>
+          <a class="nav-link" href="#achievements" data-i18n="nav.achievements">Achievements</a>
+          <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="topbar-actions">
+          <label class="language-wrap" for="language-select">
+            <span class="sr-only" data-i18n="language.label">Language</span>
+            <select id="language-select" class="language-select" aria-label="Language">
+              <option value="en">EN</option>
+              <option value="tr">TR</option>
+              <option value="de">DE</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+              <option value="it">IT</option>
+              <option value="pt">PT</option>
+              <option value="nl">NL</option>
+              <option value="pl">PL</option>
+              <option value="ru">RU</option>
+            </select>
+          </label>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">Dark</button>
+        </div>
+      </nav>
+
+      <div class="hero-grid" id="top">
+        <section class="hero-copy reveal intro-1">
+          <p class="eyebrow" data-i18n="hero.eyebrow">International Relations • Research • Content Writing</p>
+          <h1>
+            <span data-i18n="hero.title.line1">Turning policy thinking</span>
+            <span data-i18n="hero.title.line2">into clear communication.</span>
+          </h1>
+          <p class="lead" data-i18n="hero.lead">
+            I am a fresh graduate in International Relations based in Istanbul, with experience in overseas representation,
+            political affairs, content writing, research, and public-facing communication. I combine analytical thinking with
+            practical coordination to support international teams and fast-moving projects.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#experience" data-i18n="hero.primary">View Experience</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.secondary">Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.0.strong">GPA 3.66/4.00</strong>
+              <span data-i18n="hero.stats.0.span">International Relations, UIN Jakarta</span>
+            </article>
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.1.strong">Overseas Representative</strong>
+              <span data-i18n="hero.stats.1.span">Stepparts Otomotiv, Istanbul</span>
+            </article>
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.2.strong">Content + Research</strong>
+              <span data-i18n="hero.stats.2.span">SEO, writing, policy analysis</span>
+            </article>
+          </div>
+        </section>
+
+        <aside class="hero-card reveal intro-2">
+          <div class="avatar">TA</div>
+          <p class="role" data-i18n="hero.card.role">International Relations Graduate</p>
+          <h2 data-i18n="hero.card.title">Analytical, communicative, and comfortable working across cultures.</h2>
+          <p class="card-copy" data-i18n="hero.card.copy">
+            My background spans ASEAN political affairs, content strategy, student leadership, and event coordination.
+            I bring structure to information and keep communication clear for both internal and external stakeholders.
+          </p>
+          <ul class="focus-list">
+            <li data-i18n="hero.card.focus.0">Political research and briefing</li>
+            <li data-i18n="hero.card.focus.1">Content writing and SEO basics</li>
+            <li data-i18n="hero.card.focus.2">Cross-team coordination</li>
+            <li data-i18n="hero.card.focus.3">Public speaking and presentations</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about-section reveal-on-scroll" id="about">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="about.label">About</p>
+          <h2 data-i18n="about.title">Short profile</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p data-i18n="about.p1">
+              I am a recent International Relations graduate with an interest in global regulation, diplomacy,
+              and the systems behind international cooperation. I enjoy turning complex information into useful,
+              readable output.
+            </p>
+            <p data-i18n="about.p2">
+              My experience includes corporate communication, political affairs research, editorial content writing,
+              and organizational leadership. I value clarity, responsibility, and consistency in every role I take on.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <article class="mini-card">
+              <span data-i18n="about.highlights.0.label">Base</span>
+              <strong data-i18n="about.highlights.0.value">Istanbul, Turkiye</strong>
+            </article>
+            <article class="mini-card">
+              <span data-i18n="about.highlights.1.label">Interest</span>
+              <strong data-i18n="about.highlights.1.value">Global regulation and international law</strong>
+            </article>
+            <article class="mini-card">
+              <span data-i18n="about.highlights.2.label">Strength</span>
+              <strong data-i18n="about.highlights.2.value">Research, coordination, and communication</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section reveal-on-scroll" id="experience">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="experience.label">Experience</p>
+          <h2 data-i18n="experience.title">Working history</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span data-i18n="experience.meta.0">2024 - Present</span>
+              <span data-i18n="experience.meta.1">Istanbul</span>
+            </div>
+            <div class="timeline-card">
+              <h3 data-i18n="experience.company">Stepparts Otomotiv</h3>
+              <p class="timeline-role" data-i18n="experience.role">Overseas Representative</p>
+              <ul>
+                <li data-i18n="experience.bullets.0">Managed communication and built relationships with international clients.</li>
+                <li data-i18n="experience.bullets.1">Conducted market research and supported global sales activities.</li>
+                <li data-i18n="experience.bullets.2">Coordinated orders and ensured smooth delivery with internal teams.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section leadership-section reveal-on-scroll" id="leadership">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="leadership.label">Leadership</p>
+          <h2 data-i18n="leadership.title">Organization and internship experience</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <p class="card-kicker" data-i18n="leadership.cards.0.kicker">Political Affairs Intern</p>
+            <h3 data-i18n="leadership.cards.0.title">Permanent Mission of the Republic of Indonesia to ASEAN</h3>
+            <p data-i18n="leadership.cards.0.meta">January - March 2025, Jakarta</p>
+            <p data-i18n="leadership.cards.0.body">Research, analysis, reports, briefs, and monitoring political developments in ASEAN frameworks.</p>
+          </article>
+          <article class="info-card">
+            <p class="card-kicker" data-i18n="leadership.cards.1.kicker">Content Writer Intern</p>
+            <h3 data-i18n="leadership.cards.1.title">SINDOnews</h3>
+            <p data-i18n="leadership.cards.1.meta">January - March 2024, Jakarta</p>
+            <p data-i18n="leadership.cards.1.body">Content strategy, editing, keyword research, SEO, and performance analysis for web and social media.</p>
+          </article>
+          <article class="info-card">
+            <p class="card-kicker" data-i18n="leadership.cards.2.kicker">Public Relations Division</p>
+            <h3 data-i18n="leadership.cards.2.title">International Relations educational and development groups</h3>
+            <p data-i18n="leadership.cards.2.meta">2021 - 2022</p>
+            <p data-i18n="leadership.cards.2.body">Communication campaigns, stakeholder relations, events, and content production across organizations.</p>
+          </article>
+          <article class="info-card">
+            <p class="card-kicker" data-i18n="leadership.cards.3.kicker">Volunteer roles</p>
+            <h3 data-i18n="leadership.cards.3.title">Conference, research, and event support</h3>
+            <p data-i18n="leadership.cards.3.meta">2021 - 2024</p>
+            <p data-i18n="leadership.cards.3.body">Arbiter, speaker, liaison officer, and content volunteer across major conferences and competitions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section reveal-on-scroll" id="education">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="education.label">Education</p>
+          <h2 data-i18n="education.title">Academic background</h2>
+        </div>
+
+        <div class="education-card">
+          <div>
+            <p class="card-kicker" data-i18n="education.kicker">2021 - 2025</p>
+            <h3 data-i18n="education.school">Syarif Hidayatullah Islamic State University Jakarta</h3>
+            <p data-i18n="education.degree">International Relations</p>
+          </div>
+          <div class="education-side">
+            <span data-i18n="education.status">Status: Graduated</span>
+            <strong data-i18n="education.gpa">GPA: 3.66 / 4.00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section achievements-section reveal-on-scroll" id="achievements">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="achievements.label">Achievements</p>
+          <h2 data-i18n="achievements.title">Selected highlights</h2>
+        </div>
+
+        <div class="chips">
+          <span data-i18n="achievements.items.0">Youth International Summit MUN - Brand Ambassador</span>
+          <span data-i18n="achievements.items.1">LSPR MUN - Delegate of Denmark in UNEP Council</span>
+          <span data-i18n="achievements.items.2">IRON MUN - Delegate of USA in UNEP Council</span>
+          <span data-i18n="achievements.items.3">Youth International Summit MUN - Delegate of Liberia</span>
+        </div>
+      </section>
+
+      <section class="section skills-section reveal-on-scroll" id="skills">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="skills.label">Skills</p>
+          <h2 data-i18n="skills.title">What I bring</h2>
+        </div>
+
+        <div class="skills-layout">
+          <article class="skill-card">
+            <h3 data-i18n="skills.items.0.title">Communication</h3>
+            <p data-i18n="skills.items.0.body">Public speaking, stakeholder communication, relationship building, and presentation delivery.</p>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skills.items.1.title">Research</h3>
+            <p data-i18n="skills.items.1.body">Policy analysis, data gathering, reporting, briefing, and content validation.</p>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skills.items.2.title">Content</h3>
+            <p data-i18n="skills.items.2.body">Writing, editing, SEO basics, content strategy, and brand-aligned copy.</p>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skills.items.3.title">Tools</h3>
+            <p data-i18n="skills.items.3.body">Microsoft Office, research workflows, collaboration tools, and cross-team coordination systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal-on-scroll" id="contact">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="section-label" data-i18n="contact.label">Contact</p>
+            <h2 data-i18n="contact.title">Open to research, communication, and content roles.</h2>
+            <p data-i18n="contact.body">
+              If you need someone who can research clearly, communicate professionally, and support international-facing
+              work with structure, you can reach me directly.
+            </p>
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:tasyaauliyarizka@gmail.com" data-i18n="contact.email">Email Me</a>
+              <a class="button secondary" href="tel:+6285694536400" data-i18n="contact.call">Call Me</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <p data-i18n="contact.box.nameLabel">Name</p>
+            <strong data-i18n="contact.box.nameValue">Tasya Auliya Rizka</strong>
+            <p data-i18n="contact.box.emailLabel">Email</p>
+            <strong><a href="mailto:tasyaauliyarizka@gmail.com">tasyaauliyarizka@gmail.com</a></strong>
+            <p data-i18n="contact.box.phoneLabel">Phone</p>
+            <strong><a href="tel:+6285694536400">+62 856 9453 6400</a></strong>
+            <p data-i18n="contact.box.locationLabel">Location</p>
+            <strong data-i18n="contact.box.locationValue">Istanbul, Turkiye</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <a class="floating-mail" href="mailto:tasyaauliyarizka@gmail.com" aria-label="Email Tasya">
+    <span class="floating-mail__icon">@</span>
+    <span class="floating-mail__text" data-i18n="floatingMail">Email</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
